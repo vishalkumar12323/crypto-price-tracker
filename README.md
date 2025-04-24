@@ -2,7 +2,7 @@
 
 A responsive React + Redux Toolkit application that simulates real-time cryptocurrency price tracking, similar to CoinMarketCap.
 
-![Crypto Tracker Demo](demo.gif)
+![Crypto Tracker Demo](/public/demo.png)
 
 ## Features
 
@@ -73,14 +73,6 @@ src/
   ├── App.jsx               // Main application component
   └── index.js              // Application entry point
 ```
-
-## Enhancement Ideas
-
-- Implement real WebSocket connection (e.g., Binance API)
-- Add filtering and sorting capabilities
-- Implement localStorage for persistence
-- Add unit tests for reducers and selectors
-- Convert to TypeScript for better type safety
 
 ## License
 
