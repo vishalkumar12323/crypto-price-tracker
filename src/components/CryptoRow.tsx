@@ -22,7 +22,6 @@ const CryptoRow = ({ asset }: { asset: CryptoAsset }) => {
     circulatingSupply,
   } = asset;
 
-  // Determine if price changed since last update for animation
   const priceDirection = asset.previousPrice
     ? price > asset.previousPrice
       ? "up"

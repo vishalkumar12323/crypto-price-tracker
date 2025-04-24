@@ -15,7 +15,6 @@ const ChartPlaceholder = ({ trend }: ChartPlaceholderProps) => {
     },
   };
 
-  // Get the appropriate color scheme based on trend
   const { stroke, fill } = colors[trend] || colors.up;
 
   return (

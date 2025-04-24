@@ -82,13 +82,13 @@ export class CryptoWebSocketSimulator {
   }
 }
 
-// middleware function for connect to redux store
+// middleware function for connect to redux store.
 export const connectWebSocket = (
   dispatch: AppDispatch
 ): CryptoWebSocketSimulator => {
   // Create a socket instance
   const socket = new CryptoWebSocketSimulator((updates) => {
-    // Process each update and dispatch to Redux
+    // Process each update and dispatch to Redux.
     updates.forEach((update) => {
       dispatch({
         type: "crypto/updateAsset",
@@ -97,7 +97,7 @@ export const connectWebSocket = (
     });
   });
 
-  // Connect to the socket
+  // Connect to the socket.
   socket.connect();
   return socket;
 };
